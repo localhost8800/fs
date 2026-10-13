@@ -3,7 +3,7 @@
 
 
 const express = require('express');
-const axios = require('./node_modules/axios/index.d.cts');
+const axios = require('axios');
 const { Parser } = require('json2csv');
 
 const app = express();
