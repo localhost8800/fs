@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Form</title>
+</head>
+<body>
+    <h2>Customer Details Form</h2>
+
+    <form method="POST">
+        Customer Name:
+        <input type="text" name="CustName" required>
+        <br><br>
+
+        Email:
+        <input type="email" name="email" required>
+        <br><br>
+
+        Mobile Number:
+        <input type="text" name="MobNo"
+               pattern="[0-9]{10}"
+               maxlength="10" minlength="10"
+               title="Enter exactly 10 digits"
+               inputmode="numeric" required>
+        <br><br>
+
+        Address:
+        <textarea name="address" required></textarea>
+        <br><br>
+
+        Pincode:
+        <input type="text" name="pincode"
+               pattern="[0-9]{6}"
+               maxlength="6" minlength="6"
+               title="Enter exactly 6 digits"
+               inputmode="numeric" required>
+        <br><br>
+
+        <button type="submit">Add Customer</button>
+    </form>
+
+    <br>
+    <a href="/details">View All Customers</a>
+</body>
+</html>
