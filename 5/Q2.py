@@ -1,4 +1,4 @@
-
+# 2. Write a program to implement app routing in flask by accepting input through an URL.
 from flask import Flask
 
 app = Flask(__name__)
